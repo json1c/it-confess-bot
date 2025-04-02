@@ -15,6 +15,7 @@ from tgbot.services.api.generate import handle_generate
 async def run_site(config: Config):
     config._cached_background = Image.open(config.settings.background_path).convert("RGB")
     config._cached_font = ImageFont.truetype(config.settings.font_path, size=52)
+
     with open(config.settings.parables_path) as file:
         config._parables_list = file.read().strip().splitlines()
 
@@ -49,7 +50,7 @@ async def on_startup(dispatcher: Dispatcher, bot: Bot, config: Config):
     logging.debug(f"Inline Mode - {bot_info.supports_inline_queries}")
     
     if not bot_info.supports_inline_queries:
-        logging.error(f"Privacy Mode for bot @{bot_info.username} is not enabled! Exiting...")
+        logging.error(f"Inline Mode for bot @{bot_info.username} is not enabled! Exiting...")
         await bot.session.close()
         sys.exit(1)
 
