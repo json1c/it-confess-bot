@@ -1,0 +1,4 @@
+aiogram
+coloredlogs
+toml
+pillow

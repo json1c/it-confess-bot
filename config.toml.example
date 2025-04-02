@@ -1,0 +1,14 @@
+[bot]
+token = "0000000000:AAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+[api]
+api_url = "https://api.huisbn.ru"
+
+[settings]
+font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+background_path = "assets/background.png"
+parables_path = "assets/parables.txt"
+
+[web]
+listen_port = 3000
+listen_ip = "0.0.0.0"
