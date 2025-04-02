@@ -48,7 +48,7 @@ font_path = "assets/font.ttf"
 ### 3. Запусти бота
 
 ```bash
-python bot.py
+python -m tgbot
 ```
 
 ---
